@@ -1,5 +1,9 @@
 class CouponsController < ApplicationController
   
+  def index
+      @coupons = coupon.all
+    end
+  
   def create 
     @coupons = Coupon.new
     @coupons.coupon_code = params[:coupon_code]
