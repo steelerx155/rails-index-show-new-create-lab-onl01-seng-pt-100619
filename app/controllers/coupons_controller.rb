@@ -1,5 +1,5 @@
 class CouponsController < ApplicationController
-  
+  before_action :set_coupon, only: :show
   def new 
     
   end
