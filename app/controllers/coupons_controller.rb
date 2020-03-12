@@ -1,3 +1,3 @@
-class CouponController < ActiveRecord::Base
+class CouponController < ApplicationController
   
 end
