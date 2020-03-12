@@ -13,4 +13,8 @@ class CouponsController < ApplicationController
      redirect_to coupons_path(@coupons)
   end 
   
+  private
+  def set_coupon
+    @coupon = Student.find(params[:id])
+  
 end
